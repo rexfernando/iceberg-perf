@@ -13,7 +13,8 @@ docker compose exec trino trino
 ```
 
 To Test performance (adjust the sql commands in init.sql before you run):
-docker exec -it trino trino --server localhost:8080 --catalog iceberg --schema tpch --file /etc/trino/init.sql
+```docker exec -it trino trino --server localhost:8080 --catalog iceberg --schema tpch --file /etc/trino/init.sql
+```
 
 Stop and remove the containers and network:
 ```shell
